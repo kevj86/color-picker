@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+    <title>Colour Scheme Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="selection-bar">
+            <input type="color" name="seed" id="seed-input">
+            <select name="color-scheme" id="scheme-select">
+                <option value="Monochrome">Monochrome</option>
+                <option value="Monochrome-Dark">Monochrome-Dark</option>
+                <option value="Monochrome-Light">Monochrome-Light</option>
+                <option value="Complement">Complement</option>
+                <option value="Analogic">Analogic</option>
+                <option value="Analogic-Complement">Analogic-Complement</option>
+                <option value="Triad">Triad</option>
+                <option value="Quad">Quad</option>
+            </select>
+            <button id="get-scheme">Get Colour Scheme</button>
+        </div>
+        <div id="colour-display">
+            <div id="colour-one" class="colour"></div>
+            <div id="colour-two" class="colour"></div>
+            <div id="colour-three" class="colour"></div>
+            <div id="colour-four" class="colour"></div>
+            <div id="colour-five" class="colour"></div>
+        </div>
+        <div id="colour-hex">
+            <div id="hex-one" class="hex-display"></div>
+            <div id="hex-two" class="hex-display"></div>
+            <div id="hex-three" class="hex-display"></div>
+            <div id="hex-four" class="hex-display"></div>
+            <div id="hex-five" class="hex-display"></div>
+        </div>
+    </div>
+</body>
+<script src="/app.js"></script>
+</html>
